@@ -1,0 +1,17 @@
+<template name="SemanticUIMenu">
+
+  <div class="ui {{class}} menu" style="{{style}}">
+    {{#each tabs}}
+    <a class="{{activeClass}} item js-tab">
+      {{#if tabTemplate}}
+        {{> Template.dynamic template=tabTemplate }}
+      {{else}}
+        {{name}}
+      {{/if}}
+    </a>
+    {{/each}}
+  </div>
+
+  {{> Template.dynamic template=contentTemplate }}
+
+</template>
