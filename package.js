@@ -1,6 +1,6 @@
 Package.describe({
   name: 'maxfi:semantic-ui-components',
-  version: '0.0.1',
+  version: '0.1.0',
   // Brief, one-line summary of the package.
   summary: 'Semantic-UI components for Blaze',
   // URL to the Git repository containing the source code for this package.
@@ -11,16 +11,16 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.4.3.2');
-  api.use(['ecmascript', 'coffeescript', 'jquery', 'underscore', 'templating'], 'client');
+  api.versionsFrom('1.6.1');
+  api.use(['ecmascript', 'jquery', 'templating@1.3.2'], 'client');
   api.addFiles([
-    'SemanticUIDropdown.html',
-    'SemanticUIDropdown.coffee',
-    'SemanticUIMenu.html',
-    'SemanticUIMenu.coffee',
-    'SemanticUIModal.html',
-    'SemanticUIModal.coffee',
-    'SemanticUIPopup.html',
-    'SemanticUIPopup.coffee',
+    'semantic-ui-dropdown.html',
+    'semantic-ui-dropdown.js',
+    'semantic-ui-menu.html',
+    'semantic-ui-menu.js',
+    'semantic-ui-modal.html',
+    'semantic-ui-modal.js',
+    'semantic-ui-popup.html',
+    'semantic-ui-popup.js',
   ], 'client');
 });
